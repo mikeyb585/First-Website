@@ -1,0 +1,33 @@
+* Build Nav Bar for all pagres (FlexBox)
+
+*Index (Home page)
+   - Insert name on Index (FlexBox)
+   - Insert grid on Index (CSS Grid)
+   - Add images
+   - Add font
+   - Add Animaation
+
+*   About page
+   - Add image
+   - Add paragraphs
+   - Add qoute using float
+
+*   Portfolio Page
+    - Add "Coming Soon"
+    - Add Date and "Chicago" (Supreme website font)
+
+*   Contact Page
+    - Add paragraph about " I'm looking to get more experience in frontend development. Please contact me for..."
+    - Add Skills column
+    - Add Contact column
+    - Add signature tag "Quentin Taritino font"
+
+
+
+
+
+*** - Resize "The Bean Picture" (picture loading slower)
+    - Fix Text so its center, no matter what the screen size is.
+
+
+* It took 63 days to build this website. 

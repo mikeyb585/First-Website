@@ -1,0 +1,255 @@
+/* Master styles */
+body{
+    width: 960x;
+    margin: 0 auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: auto;
+    height: 100%;
+}
+
+/* Nav Styles*/
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 80px 80px 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.left-side{
+    display: flex;
+}
+
+
+.nav-wrapper > .left-side > div{
+    margin-right: 25px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper{
+    height: 16px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 2px solid lightskyblue;
+}
+
+.nav-link-wrapper a:hover{
+    color: #8a8a8a;
+}
+
+.active-nav-link{
+    border-bottom: 2px solid lightskyblue;
+}
+
+.active-nav-link a{
+    color: lightskyblue !important;
+}
+
+/* Home Center Styles */
+
+.home-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.home-item-wrapper{
+    position: relative;
+}
+
+.home-item-wrapper a{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.home-item-img-background{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subtitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5625em;
+    font-weight: 600;
+}
+
+.subtitle a{
+    text-decoration: none;
+    color: white
+
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(30%);
+}
+
+.footer{
+    text-align: left;
+    padding: 170px 0px 0px 20px;
+    font-size: 0.938em;
+}
+
+/* About Page */ 
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: repeat (5, 1fr);
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-areas: 
+    "photo photo bio bio bio"
+    "photo photo bio bio bio"
+    "photo photo bio bio bio";
+    max-width: 960px;
+    margin: 0 auto;
+    grid-gap: 110px;
+    padding-top: 30px;
+}
+
+.aboutMe-image-wrapper{
+    grid-area: photo;
+}
+
+.aboutMe-image-wrapper img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 8px solid lightskyblue;
+    
+}
+
+.profile-content-wrapper{
+    grid-area: bio;
+    font-size: 1.0625em;
+}
+
+.profile-content-wrapper h1{
+    color: lightskyblue;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.profile-content-wrapper p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.profile-content-wrapper a{
+    color: darkorange;
+    font-weight: 800;
+}
+
+
+blockquote{
+    float: right;
+    color: lightskyblue;
+    width: 30%;
+    font-style: italic;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 0.875em;
+    margin: 0px 0px 0px 5px;
+    padding: 1px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+/* Portfolio Page */
+
+.porfolio-info h1{
+    color: lightskyblue;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin-top: 70px;
+}
+.porfolio-info p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+/* Contact Me Page */
+
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat (6, 1fr);
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-areas:
+    "header header header header header header"
+   
+    "info info info skills skills skills"
+    "info info info skills skills skills"
+    
+    "links links links links links links";
+    max-width: 960px;
+    margin: 0 auto;
+    grid-gap: 70px;
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+}
+
+.frontEnd-info{
+    grid-area: info;
+    width: 500px;
+    
+}
+
+.skills{
+    grid-area: skills;
+}
+
+.links{
+    grid-area: links;
+    text-align: center;
+}
+.skills h2, .frontEnd-info h2, .header h1{
+    color: lightskyblue;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.frontEnd-info p{
+    font-size: 1.0625em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+table{
+    font-size: 1.0625em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 220px;
+    border-collapse: collapse;
+}
+
+tr.odd {
+    background-color: lightskyblue;
+    
+
+}
+
+
+
+
+
